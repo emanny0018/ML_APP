@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 
 # LOADING THE DATA
-rentalPD = pd.read_csv('/Users/ericiyen/project/london_processed.csv')
+rentalPD = pd.read_csv('/mlapp/data/london_processed_data.csv')
 
 # Check data to see if correct
 print(rentalPD.head(5))
