@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-mlapp-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ml-app
+  template:
+    metadata:
+      labels:
+         app: ml-app
+  spec:  
+    containers:
+    - name: ml-app-containers
+      image: emanny0018/mlapp:mlappv1
+      ports:
+      - containerPort: 80

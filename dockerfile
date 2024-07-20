@@ -1,4 +1,5 @@
 FROM python
+LABEL name=ERICMANNY
 WORKDIR mlapp
 COPY rental.py rental.py
 COPY london_processed_data.csv data/london_processed_data.csv
